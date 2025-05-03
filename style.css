@@ -1,16 +1,13 @@
-/* FURIA Fan Chat CSS - Base na paleta de cores preta, dourada e cinza */
+/* FURIA Fan Chat CSS*/
 :root {
     --furia-black: #000000;
     --furia-white: #FFFFFF;
     --furia-gold: #D4AF37;
-    /* Dourado substituindo o azul */
     --furia-gray: #333333;
     --furia-light-gray: #555555;
     --furia-dark-gold: #B8860B;
-    /* Dourado escuro substituindo azul escuro */
     --message-bg: #222222;
     --system-message-bg: rgba(212, 175, 55, 0.1);
-    /* Fundo de mensagem com dourado */
 }
 
 * {
@@ -797,8 +794,7 @@ input[type="text"]::placeholder {
 .live-indicator {
     animation: pulse 2s infinite;
 }
-
-/* Focus states for better accessibility */
+/*estados de foco para melhor acessebilidade  */
 input:focus,
 button:focus {
     outline: 2px solid var(--furia-gold);
@@ -842,7 +838,7 @@ button:focus {
     }
 }
 
-/* Additional mobile optimizations */
+/* versão mobile */
 @media (max-width: 480px) {
     .header {
         padding: 10px 0;
@@ -876,7 +872,7 @@ button:focus {
     }
 }
 
-/* Print styles - in case someone wants to print the chat */
+/* Print styles -se alguém quiser printar o chat */
 @media print {
 
     .chat-input,
