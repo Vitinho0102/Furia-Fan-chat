@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FURIA Fan Chat - Conecte-se com seu time favorito</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <img src="imagens/LogoDourada.jpeg" alt="FURIA Logo" />
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Jogos</a></li>
+                    <li><a href="#">Equipe</a></li>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Loja</a></li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <img src="imagens/profile.jpeg" alt="User Profile" class="profile-pic">
+                <span class="username">FuriaFan123</span>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="sidebar">
+                <div class="live-matches">
+                    <h2>Partidas Hoje <span class="live-indicator">AO VIVO</span></h2>
+                    <div class="match-card live">
+                        <div class="match-time">AGORA</div>
+                        <div class="match-teams">
+                            <div class="team">
+                                <img src="/imagens/LogoDourada.jpeg" alt="FURIA" />
+                                <span>FURIA</span>
+                            </div>
+                            <div class="score">
+                                <span class="team1-score">12</span>
+                                <span>:</span>
+                                <span class="team2-score">9</span>
+                            </div>
+                            <div class="team">
+                                <img src="imagens/natus-vincere-navi-logo-png_seeklogo-405608.png" alt="Navi" />
+                                <span>NAVI</span>
+                            </div>
+                        </div>
+                        <div class="match-info">
+                            <span class="tournament">ESL Pro League</span>
+                            <span class="map">Mapa: Inferno</span>
+                            <button id="twitchBtn" class="feature-btn"><i class="fab fa-twitch"></i>Assistir</button>
+                        </div>
+                    </div>
+                    <div class="match-card upcoming">
+                        <div class="match-time">16:00</div>
+                        <div class="match-teams">
+                            <div class="team">
+                                <img src="imagens/LogoDourada.jpeg" alt="FURIA" />
+                                <span>FURIA</span>
+                            </div>
+                            <div class="score">
+                                <span>vs</span>
+                            </div>
+                            <div class="team">
+                                <img src="imagens/team-liquid-logo-png_seeklogo-408672.png" alt="Liquid" />
+                                <span>Liquid</span>
+                            </div>
+                        </div>
+                        <div class="match-info">
+                            <span class="tournament">ESL Pro League</span>
+                            <button class="btn btn-secondary">Receber Alertas</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-stats">
+                    <h2>Estatísticas do Time</h2>
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <span class="stat-label">Vitórias (últimos 5)</span>
+                            <div class="stat-value">
+                                <span class="win">W</span>
+                                <span class="win">W</span>
+                                <span class="loss">L</span>
+                                <span class="win">W</span>
+                                <span class="win">W</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Rank Mundial</span>
+                            <span class="stat-value">#4</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Próximo Torneio</span>
+                            <span class="stat-value">BLAST Premier</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-player">
+                    <h2>Jogador em Destaque</h2>
+                    <div class="player-card">
+                        <img src="imagens/Fallen.jpeg" alt="Fallen" class="player-image">
+                        <div class="player-info">
+                            <h3>Fallen</h3>
+                            <p class="role">In-game Leader</p>
+                            <div class="player-stats">
+                                <div class="stat">
+                                    <span class="stat-name">Rating 2.0</span>
+                                    <span class="stat-value">1.15</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-name">K/D</span>
+                                    <span class="stat-value">1.2</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-name">HS%</span>
+                                    <span class="stat-value">48.5%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h2>FURIA Fan Chat</h2>
+                    <div class="chat-actions">
+                        <span class="online-users">2,458 torcedores online</span>
+                        <button class="btn btn-secondary"><i class="fas fa-cog"></i></button>
+                    </div>
+                </div>
+
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message system">
+                        <p>Bem-vindo ao chat da FURIA! Partida FURIA vs NAVI já começou!</p>
+                    </div>
+                    <div class="message user">
+                        <div class="message-avatar">
+                            <img src="imagens/profile.jpeg" alt="User">
+                        </div>
+                        <div class="message-content">
+                            <div class="message-header">
+                                <span class="message-username">FuriaFan123</span>
+                                <span class="message-time">14:05</span>
+                            </div>
+                            <p>Que round incrível do arT! 3k com AWP!</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="message-avatar">
+                            <img src="imagens/profile.jpeg" alt="User">
+                        </div>
+                        <div class="message-content">
+                            <div class="message-header">
+                                <span class="message-username">CSGOLover</span>
+                                <span class="message-time">14:06</span>
+                            </div>
+                            <p>VAMOS FURIA! Precisa fechar esse primeiro half com vantagem!</p>
+                        </div>
+                    </div>
+                    <div class="message system highlight">
+                        <p>ALERTA: FURIA acaba de vencer o round com clutch do KSCERATO!</p>
+                    </div>
+                    <div class="message">
+                        <div class="message-avatar">
+                            <img src="imagens/profile.jpeg" alt="User">
+                        </div>
+                        <div class="message-content">
+                            <div class="message-header">
+                                <span class="message-username">BRazilPower</span>
+                                <span class="message-time">14:08</span>
+                            </div>
+                            <p>O KSCERATO está insano hoje! MVP da partida com certeza.</p>
+                        </div>
+                    </div>
+                    <div class="message user">
+                        <div class="message-avatar">
+                            <img src="imagens/profile.jpeg" alt="User">
+                        </div>
+                        <div class="message-content">
+                            <div class="message-header">
+                                <span class="message-username">FuriaFan123</span>
+                                <span class="message-time">14:10</span>
+                            </div>
+                            <p>Alguém vai no evento em São Paulo mês que vem?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input">
+                    <div class="input-group">
+                        <button class="btn-icon"><i class="fas fa-smile"></i></button>
+                        <input type="text" id="messageInput" placeholder="Envie sua mensagem para a torcida...">
+                        <button class="btn-icon send-btn" id="sendBtn"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                    <!-- <div class="chat-features">
+                        <button class="feature-btn"><i class="fas fa-poll"></i> Enquete</button>
+                        <button class="feature-btn"><i class="fas fa-image"></i> Imagem</button>
+                        <button class="feature-btn"><i class="fas fa-gift"></i> Presente</button>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="right-panel">
+                <div class="team-news">
+                    <h2>Notícias Recentes</h2>
+                    <div class="team-news">
+                        <h2>Notícias Recentes</h2>
+
+                        <!-- Notícia 1 -->
+                        <a href="https://arenakingsleague.com.br/furia-e-adidas-fecham-parceria-e-reforcam-conexao-entre-esports-moda-e-esporte-tradicional/" class="news-item">
+                            <div class="news-image">
+                                <img src="imagens/Adidas.jpeg" alt="FURIA anuncia novo patrocinador">
+                            </div>
+                            <div class="news-content">
+                                <h3>FURIA anuncia novo patrocinador</h3>
+                                <p class="news-date">Hoje, 10:30</p>
+                                <span class="read-more">Saiba mais</span>
+                            </div>
+                        </a>
+                        <a href="https://gamearena.gg/esports/cs2/kscerato-titulo-elisa/" class="news-item">
+                            <div class="news-image">
+                                <img src="imagens/download (8).jpeg" alt="Entrevista exclusiva com KSCERATO">
+                            </div>
+                            <div class="news-content">
+                                <h3>Entrevista exclusiva com KSCERATO</h3>
+                                <p class="news-date">Ontem, 18:45</p>
+                                <span class="read-more">Saiba mais</span>
+                            </div>
+                        </a>
+                        <a href="https://www.dust2.com.br/noticias/45471/furia-bate-complexity-e-se-classifica-ao-major" class="news-item">
+                            <div class="news-image">
+                                <img src="imagens/FURIA se classifica para o Major.jpeg" alt="FURIA se classifica para o Major">
+                            </div>
+                            <div class="news-content">
+                                <h3>FURIA se classifica para o Major</h3>
+                                <p class="news-date">3 dias atrás</p>
+                                <span class="read-more">Saiba mais</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="twitter-feed">
+                    <h2>Twitter <i class="fab fa-twitter"></i></h2>
+                    <div class="tweet">
+                        <div class="tweet-header">
+                            <a href="https://twitter.com/FURIA" class="tweet-profile-link" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="imagens/Furia-Esports-Logo-Vector.jpg" alt="FURIA Esports"
+                                    class="tweet-profile-pic">
+                            </a>
+                            <div class="tweet-user-info">
+                                <a href="https://twitter.com/FURIA" class="tweet-name" target="_blank"
+                                    rel="noopener noreferrer">FURIA Esports</a>
+                                <a href="https://twitter.com/FURIA" class="tweet-handle" target="_blank"
+                                    rel="noopener noreferrer">@FURIA</a>
+                            </div>
+                        </div>
+                        <div class="tweet-content">
+                            GG! Vitória importante contra a Team Liquid. Agradecemos a todos os fãs pelo apoio!
+                            #DIADEFURIA #GOFURIA
+                        </div>
+                        <div class="tweet-stats">
+                            <a href="https://twitter.com/FURIA/status/..." class="tweet-stat like" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-heart"></i> 3.2K
+                            </a>
+                            <a href="https://twitter.com/FURIA/status/..." class="tweet-stat comment" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-comment"></i> 456
+                            </a>
+                            <a href="https://twitter.com/FURIA/status/..." class="tweet-stat retweet" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-retweet"></i> 1.1K
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tweet">
+                        <div class="tweet-header">
+                            <a href="https://twitter.com/kscerato" class="tweet-profile-link" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="imagens/ksceratoTWITER.jpg" alt="KSCERATO" class="tweet-profile-pic">
+                            </a>
+                            <div class="tweet-user-info">
+                                <a href="https://twitter.com/kscerato" class="tweet-name" target="_blank"
+                                    rel="noopener noreferrer">KSCERATO</a>
+                                <a href="https://twitter.com/kscerato" class="tweet-handle" target="_blank"
+                                    rel="noopener noreferrer">@kscerato</a>
+                            </div>
+                        </div>
+                        <div class="tweet-content">
+                            Treinando forte para os próximos desafios. Obrigado pelo apoio da melhor torcida do
+                            mundo!
+                            BR
+                        </div>
+                        <div class="tweet-stats">
+                            <a href="https://twitter.com/kscerato/status/..." class="tweet-stat like" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-heart"></i> 2.8K
+                            </a>
+                            <a href="https://twitter.com/kscerato/status/..." class="tweet-stat comment" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-comment"></i> 325
+                            </a>
+                            <a href="https://twitter.com/kscerato/status/..." class="tweet-stat retweet" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-retweet"></i> 921
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="special-events">
+                    <h2>Eventos Especiais</h2>
+                    <div class="event-card">
+                        <div class="event-header">
+                            <h3>Meet & Greet Virtual</h3>
+                            <span class="event-date">10 de Maio - 19:00</span>
+                        </div>
+                        <p>Encontro virtual com os jogadores da FURIA após o torneio ESL Pro League.</p>
+                        <button class="btn btn-primary btn-block">Inscrever-se</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Notification Panel (normally hidden, shown on alert) -->
+        <div class="notification-panel" id="notificationPanel">
+            <div class="notification">
+                <div class="notification-icon">
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div class="notification-content">
+                    <h3>Round Decisivo!</h3>
+                    <p>FURIA vs NAVI - Match Point para FURIA!</p>
+                </div>
+                <a href="https://www.twitch.tv/furiatv" target="_blank" class="btn btn-primary">Assistir Agora</a>
+                <button class="close-notification" id="closeNotification">&times;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
