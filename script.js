@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         isLive: true
     };
 
-    // Chat messages array (for demo purposes)
+    
     const predefinedMessages = [
         {
             username: 'CSMaster99',
@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 5000);
     }
     
-    // Easter Egg: Secret commands in chat
+    // Easter Egg: comandos secretos no chat
     messageInput.addEventListener('input', function() {
         const text = messageInput.value.trim().toLowerCase();
 
